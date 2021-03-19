@@ -1,0 +1,8 @@
+{% extends 'user_management/base.html'%}
+{% block content %}
+<h1>My profile</h1>
+<p>
+  {{ object }}
+  <a href="{% url 'user_management:logout' %}">Logout</a>
+</p>
+{% endblock %}
